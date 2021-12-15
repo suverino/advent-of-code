@@ -6,7 +6,7 @@
 #include <vector>
 #include <bitset>
 
-#define NUMBITS 12
+#define NUMBITS 5
 
 struct Timer {
 	std::chrono::time_point<std::chrono::high_resolution_clock> start, end;
@@ -35,6 +35,7 @@ int main() {
 		myFile >> cursor;
 		int size = cursor.size();
 		std::vector<int> common;
+		std::vector<std::string> list;
 		for (int i = 0; i < size; i++) {
 			common.push_back(0);
 		}
